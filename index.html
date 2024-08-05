@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-pou73ViArZgHMUNv0Hd0cbJEeeS3jyeZwTNmLpv+fr7kkFmYUr8ERi5mZ8Ywmh0Jp4pDLMNSf37J1huMewKt5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Your Trip Guide TO MOROCCO</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/logo.jpg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-pou73ViArZgHMUNv0Hd0cbJEeeS3jyeZwTNmLpv+fr7kkFmYUr8ERi5mZ8Ywmh0Jp4pDLMNSf37J1huMewKt5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .search-container{
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* Hauteur de la page */
+        }        
+        #searchInput {
+            width: 300px; /* Ajustez la largeur de la boîte de recherche selon vos besoins */
+            padding: 10px;
+            border: 2px solid #060404;
+            border-radius: 20px; /* Coins arrondis */
+            font-size: 16px; /* Taille de police */
+            outline: none;
+            color: #0e0a0a;
+            background-color: white;
+        }
+
+        #searchIcon {
+            position: relative;
+            left: -35px; /* Ajustez selon vos besoins */
+            top: 3px; /* Ajustez selon vos besoins */
+            color: #0e0a0a; /* Couleur de l'icône */
+            cursor: pointer;
+        }
+
+        #searchIcon i {
+            font-size: 20px; /* Taille de l'icône */
+        }
+
+        #searchResults {
+            position: absolute;
+            background-color: white;
+            border: 1px solid transparent;
+            max-height: 200px;
+            overflow-y: auto;
+            width: 300px; /* Ajustez la largeur pour correspondre à la boîte de recherche */
+            z-index: 1000;
+        }
+
+        #searchResults div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #searchResults div:hover {
+            background-color: #eee;
+        }
+    </style>
+ 
+    <style>
+
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .comment {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .comment strong {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .reply-button {
+            margin-top: 10px;
+            background-color: #555;
+        }
+
+        .reply-button:hover {
+            background-color: #777;
+        }
+
+        .reply-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+   }
+
+   /* Home Section Start */
+   .home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(https://www.luxurylifestylemag.co.uk/wp-content/uploads/2020/03/OO_ThePalm_Wellness_Spa_Entrance_Courtyard_0982_MASTER.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   }
+   .home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "FES";}
+    10%{content: "TANGIER";}
+    20%{content: "AGADIR";}
+    30%{content: "CHEFCHAAOUEN";}
+    40%{content: "LAAIOUNE";}
+    50%{content: "ESSAOUIRA";}
+    60%{content: "MARRAKECH";}
+    70%{content: "RABAT";}
+    80%{content: "CASABLANCA";}
+    90%{content: "OUARZAZET";}
+    100%{content: "DAKHLA";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+body{
+  background-color: #c4dbf5;
+}
+/* Home Section End */
+    </style>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay>
+
+    </div>
+
+    <div class="header-top">
+      <div class="container">
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+        <a href="#" class="logo">
+         <img src="./images/logo.jpg" alt="Tourly logo" align="left">
+        </a>
+
+        <div class="header-btn-group">
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+          <nav class="navbar" data-navbar>
+             <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./images/logo.jpg" alt="101M logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+       </div>
+
+       <ul class="navbar-list">
+        <li><a href="index.html">Home</a></li> &nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="aboutus.html" onclick="toggleAbout()">About us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="activities.html">Activités</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="cuisine.html">Cuisine</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="accomendation.html">Hébergement</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="transporation.html">Transporation</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="faqs.html">FAQ</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="contactus.html">Contactez-nous</a></li>
+        <li><a href="login.html">Login</a></li>
+
+     </ul>
+
+        </nav>
+
+
+      </div>
+    </div>
+    
+  </header>
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+          <!-- Home Section Start -->
+    <div class="home">
+      <div class="content">
+          <h5>Wanna visit MOROCCO</h5>
+          <h1>Welcome To 101M <span class="changecontent"></span></h1>
+          <p>get to know the diverse cities,the beautifull nature,the cuisine and more...</p><br>
+          <br>
+          <!-- Boîte de recherche -->
+
+
+<!-- Votre contenu existant -->
+
+
+      </div>
+  </div>
+  <!-- Home Section End -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!--
+        - #ABOUTMOROCCO
+      -->
+    <style>
+        .aboutmorocco {
+            font-family: Arial, sans-serif;
+            
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container-content {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2.section-title {
+            color: #333;
+            text-align: center;
+        }
+        p.section-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: whitesmoke;
+            margin-bottom: 20px;
+        }
+        p.section-subtitlee {
+            text-align: center;
+            font-size: 1.2em;
+            color: whitesmoke;
+            margin-bottom: 20px;
+        }
+        .img-about {
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: right;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        strong {
+            color: #007bff;
+        }
+</style>
+
+<script>
+  function addComment() {
+var commenterName = document.getElementById("commenter-name").value;
+var commentInput = document.getElementById("comment-input");
+var commentText = commentInput.value;
+
+if (commenterName.trim() !== "" && commentText.trim() !== "") {
+  var commentContainer = document.getElementById("comments-container");
+
+  // Créer un nouvel élément div pour le commentaire
+  var newComment = document.createElement("div");
+  newComment.className = "comment";
+
+  // Ajouter le nom du commentateur
+  var commenter = document.createElement("strong");
+  commenter.textContent = commenterName + ": ";
+  newComment.appendChild(commenter);
+
+  // Ajouter le texte du commentaire
+  var commentContent = document.createElement("span");
+  commentContent.textContent = commentText;
+  newComment.appendChild(commentContent);
+
+  // Ajouter un bouton de réponse
+  var replyButton = document.createElement("button");
+  replyButton.textContent = "Répondre";
+  replyButton.className = "reply-button";
+  replyButton.onclick = function() {
+      showReplyBox(newComment, commenterName);
+  };
+  newComment.appendChild(replyButton);
+
+  // Ajouter le nouveau commentaire à la liste des commentaires
+  commentContainer.appendChild(newComment);
+
+  // Vider la zone de texte
+  commentInput.value = "";
+} else {
+  alert("Veuillez entrer votre nom et écrire un commentaire avant de l'ajouter.");
+}
+}
+
+function showReplyBox(commentElement, commenterName) {
+// Récupérer le nom de la personne qui répond
+var replierName = prompt("Entrez votre nom:");
+
+if (replierName !== null && replierName.trim() !== "") {
+  // Créer une boîte de réponse
+  var replyBox = document.createElement("div");
+  replyBox.className = "reply-box";
+
+  // Zone de texte pour la réponse
+  var replyInput = document.createElement("textarea");
+  replyInput.placeholder = "Écrivez votre réponse ici...";
+  replyBox.appendChild(replyInput);
+
+  // Bouton pour ajouter la réponse
+  var addReplyButton = document.createElement("button");
+  addReplyButton.textContent = "Ajouter Réponse";
+  addReplyButton.className = "reply-button";
+  addReplyButton.onclick = function() {
+      addReply(commentElement, commenterName, replierName, replyInput.value, replyBox);
+  };
+  replyBox.appendChild(addReplyButton);
+
+  // Ajouter la boîte de réponse sous le commentaire
+  commentElement.appendChild(replyBox);
+} else {
+  alert("Veuillez entrer votre nom avant de répondre.");
+}
+}
+
+function addReply(commentElement, commenterName, replierName, replyText, replyBox) {
+if (replyText.trim() !== "") {
+  // Créer un nouvel élément div pour la réponse
+  var newReply = document.createElement("div");
+  newReply.className = "comment";
+  newReply.style.marginLeft = "20px"; // Ajouter une marge pour l'indentation
+
+  // Ajouter le nom de la personne qui répond
+  var replier = document.createElement("strong");
+  replier.textContent = replierName + " répond à " + commenterName + ": ";
+  newReply.appendChild(replier);
+
+  // Ajouter le texte de la réponse
+  var replyContent = document.createElement("span");
+  replyContent.textContent = replyText;
+  newReply.appendChild(replyContent);
+
+  // Ajouter la nouvelle réponse sous le commentaire
+  commentElement.appendChild(newReply);
+
+  // Supprimer la boîte de réponse
+  commentElement.removeChild(replyBox);
+} else {
+  alert("Veuillez écrire une réponse avant de l'ajouter.");
+}
+}
+
+</script>
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Rechercher" >
+  <span id="searchIcon"><i class="fa fa-search"></i></span>
+  <div id="searchResults"></div>
+</div>
+
+<!-- Votre contenu existant -->
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const searchResults = document.getElementById('searchResults');
+
+  // Associez chaque section avec l'URL de la page correspondante
+  const countries = [
+      { name: "cuisine", url: "cuisine.html" },
+      { name: "transport", url: "transporation.html" },
+      { name: "about-us", url: "aboutus.html" },
+      { name: "FAQ", url: "faqs.html" },
+      { name: "activités", url: "faqs.html#activitésss" },
+      { name: "activitiés", name:"ski", url: "activities.html" },
+      { name: "home", url: "index.html" },
+      {name: "contact", url: "contactus.html"},
+      {name: "log in", url: "login.html"},
+      {name: "hebergement", url: "accomendation.html"}
+
+  ];
+
+  function displayResults(results) {
+      searchResults.innerHTML = '';
+      results.forEach(result => {
+          const div = document.createElement('div');
+          div.textContent = result.name;
+          div.addEventListener('click', () => {
+              searchInput.value = result.name;
+              searchResults.innerHTML = '';
+              window.location.href = result.url; // Redirige vers la page correspondante
+          });
+          searchResults.appendChild(div);
+      });
+  }
+
+  searchInput.addEventListener('input', () => {
+      const searchText = searchInput.value.toLowerCase();
+      const filteredResults = countries.filter(country => country.name.toLowerCase().includes(searchText));
+      displayResults(filteredResults);
+  });
+
+  document.addEventListener('click', (e) => {
+      if (!searchResults.contains(e.target) && e.target !== searchInput) {
+          searchResults.innerHTML = '';
+      }
+  });
+</script>
+    <section class="aboutmorocco" id="">
+        <div class="container-content">
+            <p class="section-subtitle">À Propos du Maroc</p>
+            <h2 class="h2 section-title">QUELQUES FAITS ALÉATOIRES ET CHOSES À PROPOS DU MAROC.</h2>
+            <p>Découvrez des faits fascinants sur le Maroc :</p>
+            <ul>
+                <li>
+                    <p><img src="./images/Geographical.jpg" alt="Geographical Diversity" align="right" class="img-about"><strong>Diversité géographique :</strong> Le Maroc compte une diversité de paysages, comprenant des montagnes, des déserts, des forêts et un littoral.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/languages.jpg" alt="languages" align="right" class="img-about"><strong>Langues:</strong>L'arabe, le tamazight et le français sont des langues couramment parlées au Maroc.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/history.jpg" alt="history"  align="right" class="img-about"><strong>Histoire riche :</strong> Le Maroc a une histoire riche influencée par les cultures berbère, arabe, africaine et européenne.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/cuisine.jpeg" alt="Cuisine" align="right" class="img-about"><strong>Cuisine</strong>La cuisine marocaine est connue pour les tagines, le couscous et les épices savoureuses comme le cumin et le safran.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/art.jpg" alt="Art and Handicrafts" align="right" class="img-about"><strong>Art et artisanat :</strong>L'art traditionnel vibrant comprend le zellige (travail de carrelage), les tapis, les articles en cuir et la poterie.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/Islamicarchi.jpeg" alt="Islamic Architecture" align="right" class="img-about"><strong>Architecture islamique :</strong>On peut trouver des exemples impressionnants d'architecture islamique dans les mosquées et les médinas historiques.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/Music.jpg" alt="Music and Festivals" align="right" class="img-about"><strong>Music et Festivals:</strong>La musique marocaine mélange les influences arabes, berbères et africaines, avec des festivals célébrant différents genres.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/Sahara.jpg" alt="Sahara Desert" align="right" class="img-about"><strong>Désert du Sahara :</strong>Le désert du Sahara offre des expériences uniques telles que les randonnées à dos de chameau et le camping dans le désert.</p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/Hospitality.jpeg" alt="Hospitality" align="right" class="img-about"><strong>Hospitalité :</strong>L'hospitalité marocaine est renommée pour sa chaleur, et le thé est souvent servi comme geste d'amitié. </p>
+                </li><br><br>
+                <li>
+                    <p><img src="./images/Film.jpg" alt="Film Industry" align="right" class="img-about"><strong>Industrie cinématographique :</strong>Le Maroc est un lieu de tournage prisé pour les films et les séries télévisées internationaux.</p>
+                </li><br> <br>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+      <!--
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container-content">
+
+          <p class="section-subtitle">Découvrir de nouveaux endroits</p>
+
+          <h2 class="h2 section-title">Destination populaire</h2>
+
+          <p class="section-text">
+            Les villes et les endroits les plus visités selon les voyageurs et qui ont reçu les avis les plus positifs et élevés sont :
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./images/chefchaouen.jpg" alt="chefchaouen" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Chefchaouen</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">LEHWAMI</a>
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./images/rabat.jpg" alt="rabat" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Rabat</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">La Tour Hassan II</a>
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="https://th.bing.com/th/id/R.4eeb1680452ad0e6c77a6d46a8b4e88d?rik=etFCTmBjLqj2KQ&riu=http%3a%2f%2fblog.travel-exploration.com%2fwp-content%2fuploads%2f2012%2f10%2fSahara-Desert-Bivouac-Erg-Chebbi-Dunes-Merzouga3.jpg&ehk=IENgKKE5VUhJD%2fSUEFjijcJvkcbEPsB3GCzmUKVzK%2bo%3d&risl=&pid=ImgRaw&r=0" alt="essaouira" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Sud du Maroc</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Désert du Sahara</a>
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="https://th.bing.com/th/id/R.56ad8bee6a352e41416219f8f4b4862d?rik=aiBD5VGN5xpdcA&pid=ImgRaw&r=0" alt="agadir" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Agadir</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">La Vallée du Paradis</a>
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./images/fes.jpeg" alt="fes" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Fess</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">La vieille médina</a>
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./images/tagier1.jpeg" alt="tangier" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Tangier</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">La vieille médina</a>
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container-content">
+
+          <p class="section-subtitle
+          ">Galerie de photos</p>
+
+          <h2 class="h2 section-title">Photos de voyageurs</h2>
+
+          <p class="section-text">
+            Les voyageurs au Maroc découvrent une combinaison captivante de culture, de nature et de gastronomie. Des villes historiques comme Marrakech et Fès aux paysages variés de l'Atlas et du Sahara, le Maroc offre une diversité d'expériences. Sa riche histoire, ses cités animées et ses plats savoureux tels que les tagines et les pâtisseries sucrées contribuent à créer une destination inoubliable pour ceux en quête d'aventures culturelles, de beautés naturelles et de délices culinaires.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./images/photo1.png" alt="image1">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./images/The Most Instagrammable Places in Marrakech, Morocco - jaleh michelle.jpeg" alt="image2">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./images/10 Things To Do In Morocco.jpeg" alt="image3">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./images/Scarabeo Camp.jpeg" alt="Chefchaouen image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./images/The 9 Most Beautiful Riads in Marrakech - CHARLIES WANDERINGS.jpeg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <div class="comment-box">
+        <h2>Laisser un commentaire</h2>
+        <input type="text" id="commenter-name" placeholder="Votre nom">
+        <textarea id="comment-input" placeholder="Écrivez votre commentaire ici..."></textarea>
+        <button onclick="addComment()">Ajouter Commentaire</button>
+      </div>
+      <div class="comments-list">
+        <h2>Commentaires</h2>
+        <div id="comments-container"></div>
+      </div>
+      <br> 
+      <br>
+      <br>
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitlee" >Appel à l'action</p>
+
+            <h2 class="h2 section-title">Prêt pour un voyage inoubliable. Souvenez-vous de nous !</h2>
+
+            <p><img src="./images/logo.jpg" alt="Sahara Desert" align="right" class="img-about"><strong>Découvrez mieux le Maroc pour vivre une expérience mémorable et avoir une idée générale du pays.</strong></p>
+          </li><br><br>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a>
+
+          <p class="footer-text">
+            "Explorez les merveilles du Maroc ! Découvrez des trésors cachés, des richesses culturelles et des astuces d'initiés pour un voyage inoubliable. Votre porte d'entrée vers le monde enchanteur du Maroc vous attend."
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+             wanna add your journey in our website?Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+212615633295</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info-101M.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>3146 Koontz, RABAT</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our website for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- 
+    - #GO TO TOP
+  -->
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

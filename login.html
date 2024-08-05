@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Trip Guide TO MOROCCO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/logo.jpg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-pou73ViArZgHMUNv0Hd0cbJEeeS3jyeZwTNmLpv+fr7kkFmYUr8ERi5mZ8Ywmh0Jp4pDLMNSf37J1huMewKt5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      #searchInput {
+            width: 300px; /* Ajustez la largeur de la boîte de recherche selon vos besoins */
+            padding: 10px;
+            border: 2px solid #030202;
+            border-radius: 20px; /* Coins arrondis */
+            font-size: 16px; /* Taille de police */
+            outline: none;
+        }
+
+        #searchIcon {
+            position: relative;
+            left: -35px; /* Ajustez selon vos besoins */
+            top: 3px; /* Ajustez selon vos besoins */
+            color: #080707; /* Couleur de l'icône */
+            cursor: pointer;
+        }
+
+        #searchIcon i {
+            font-size: 20px; /* Taille de l'icône */
+        }
+#searchResults {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            max-height: 200px;
+            overflow-y: auto;
+            width: 300px; /* Ajustez la largeur pour correspondre à la boîte de recherche */
+            z-index: 1000;
+        }
+
+        #searchResults div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #searchResults div:hover {
+            background-color: #eee;}
+
+    
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins',sans-serif;
+    }
+    .bodyy{
+      background: #042f55;
+      overflow: hidden;
+    }
+    ::selection{
+      background: rgba(12, 82, 126, 0.3);
+    }
+    .containers{
+      max-width: 440px;
+      padding: 0 20px;
+      margin: 170px auto;
+    }
+    .wrapper{
+      width: 100%;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+    }
+    .wrapper .title{
+      height: 90px;
+      background: #1654a0;
+      border-radius: 5px 5px 0 0;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrapper form{
+      padding: 30px 25px 25px 25px;
+    }
+    .wrapper form .row{
+      height: 45px;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .wrapper form .row input{
+      height: 100%;
+      width: 100%;
+      outline: none;
+      padding-left: 60px;
+      border-radius: 5px;
+      border: 1px solid lightgrey;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    form .row input:focus{
+      border-color: #262a80;
+      box-shadow: inset 0px 0px 2px 2px rgba(26, 96, 188, 0.25);
+    }
+    form .row input::placeholder{
+      color: #999;
+    }
+    .wrapper form .row i{
+      position: absolute;
+      width: 47px;
+      height: 100%;
+      color: #fff;
+      font-size: 18px;
+      background: #1659a0;
+      border: 1px solid #166da0;
+      border-radius: 5px 0 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrapper form .pass{
+      margin: -8px 0 20px 0;
+    }
+    .wrapper form .pass a{
+      color: #324ecd;
+      font-size: 17px;
+      text-decoration: none;
+    }
+    .wrapper form .pass a:hover{
+      text-decoration: underline;
+    }
+    .wrapper form .button input{
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 0px;
+      background: #4a36ce;
+      border: 1px solid #1628a0;
+      cursor: pointer;
+    }
+    form .button input:hover{
+      background: #124a87;
+    }
+    .wrapper form .signup-link{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 17px;
+    }
+    .wrapper form .signup-link a{
+      color: #163da0;
+      text-decoration: none;
+    }
+    form .signup-link a:hover{
+      text-decoration: underline;
+    }
+              *{
+          margin: 0;
+          padding: 0;
+      }
+      
+      .main{
+          width: 100%;
+          background-color: rgb(121, 121, 121);
+          background-position: center;
+          background-size: cover;
+          height: 100vh;
+      }
+      
+      
+      .main{
+          width: 100%;
+          background-color: white;
+          background-position: center;
+          background-size: cover;
+          height: 100vh;
+      }
+      
+      .icon{
+          width: 200px;
+          float: left;
+          height: 70px;
+      }
+      .form{
+          width: 250px;
+          height: 380px;
+          background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+          position: absolute;
+          top: -20px;
+          left: 870px;
+          transform: translate(0%,-5%);
+          border-radius: 10px;
+          padding: 25px;
+      }
+      
+      .form h2{
+          width: 220px;
+          font-family: sans-serif;
+          text-align: center;
+          color: #ff7200;
+          font-size: 22px;
+          background-color: #fff;
+          border-radius: 10px;
+          margin: 2px;
+          padding: 8px;
+      }
+      
+      
+      
+      .liw{
+          padding-top: 15px;
+          padding-bottom: 10px;
+          text-align: center;
+      }
+      
+      .icons ion-icon{
+          color: #fff;
+          font-size: 30px;
+          padding-left: 14px;
+          padding-top: 5px;
+          transition: 0.3s ease;
+      }
+      
+      .content .par{
+          padding-left: 20px;
+          padding-bottom: 25px;
+          font-family: Arial;
+          letter-spacing: 1.2px;
+          line-height: 30px;
+      }
+      
+      .content h1{
+          font-family: 'Times New Roman';
+          font-size: 50px;
+          padding-left: 20px;
+          margin-top: 9%;
+          letter-spacing: 2px;
+      }
+      
+      .content .cn{
+          width: 160px;
+          height: 40px;
+          background: #ff7200;
+          border: none;
+          margin-bottom: 10px;
+          margin-left: 20px;
+          font-size: 18px;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: .4s ease;
+          
+      }
+      
+      .content .cn a{
+          text-decoration: none;
+          color: #000;
+          transition: .3s ease;
+      }
+      
+      .cn:hover{
+          background-color: #fff;
+      }
+      
+      .content span{
+          color: #ff7200;
+          font-size: 65px
+      }
+      
+      .form{
+          width: 250px;
+          height: 380px;
+          background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+          position: absolute;
+          top: -20px;
+          left: 870px;
+          transform: translate(0%,-5%);
+          border-radius: 10px;
+          padding: 25px;
+      }
+      
+      .form h2{
+          width: 220px;
+          font-family: sans-serif;
+          text-align: center;
+          color: #ff7200;
+          font-size: 22px;
+          background-color: #fff;
+          border-radius: 10px;
+          margin: 2px;
+          padding: 8px;
+      }
+      
+      .form input{
+          width: 240px;
+          height: 35px;
+          background: transparent;
+          border-bottom: 1px solid #ff7200;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          color: #fff;
+          font-size: 15px;
+          letter-spacing: 1px;
+          margin-top: 30px;
+          font-family: sans-serif;
+      }
+      
+      .form input:focus{
+          outline: none;
+      }
+      
+      ::placeholder{
+          color: #fff;
+          font-family: Arial;
+      }
+      
+      .btnn{
+          width: 240px;
+          height: 40px;
+          background: #ff7200;
+          border: none;
+          margin-top: 30px;
+          font-size: 18px;
+          border-radius: 10px;
+          cursor: pointer;
+          color: #fff;
+          transition: 0.4s ease;
+      }
+      .btnn:hover{
+          background: #fff;
+          color: #ff7200;
+      }
+      .btnn a{
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+      }
+      .form .link{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 17px;
+          padding-top: 20px;
+          text-align: center;
+      }
+      .form .link a{
+          text-decoration: none;
+          color: #ff7200;
+      }
+      .liw{
+          padding-top: 15px;
+          padding-bottom: 10px;
+          text-align: center;
+      }
+      .icons a{
+          text-decoration: none;
+          color: #fff;
+      }
+      .icons ion-icon{
+          color: #fff;
+          font-size: 30px;
+          padding-left: 14px;
+          padding-top: 5px;
+          transition: 0.3s ease;
+      }
+      .icons ion-icon:hover{
+          color: #ff7200;
+      }
+          
+          *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        scroll-behavior: smooth;
+        font-family: 'Lato', sans-serif;
+    
+       }
+    
+       /* Home Section Start */
+       .home{
+        width: 100%;
+        height: 90vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(https://www.luxurylifestylemag.co.uk/wp-content/uploads/2020/03/OO_ThePalm_Wellness_Spa_Entrance_Courtyard_0982_MASTER.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .home .content{
+        text-align: center;
+        padding-top: 200px;
+    }
+    .home .content h5{
+        color: white;
+        font-size: 38px;
+        font-weight: 550;
+        text-shadow: 0px 1px 1px black;
+    }
+    .home .content h1{
+        color: white;
+        font-size: 70px;
+        font-weight: 550;
+        text-shadow: 0px 1px 1px black;
+        margin-top: 5px;
+    }
+    .changecontent::after{
+        content: ' ';
+        color: #ffa500;
+        text-shadow: 0px 1px 1px black;
+        animation: changetext 10s infinite linear;
+    }
+    @keyframes changetext{
+        0%{content: "JOIN";}
+        10%{content: "US";}
+        20%{content: "NOW!";}
+        30%{content: "SIGN UP";}
+        40%{content: "LOGIN";}
+        50%{content: "WELCOME";}
+        60%{content: "JOIN";}
+        70%{content: "US";}
+        80%{content: "NOW!";}
+        90%{content: "SIGN UP";}
+        100%{content: "LOGIN";}
+    } 
+    .home .content p{
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+    .home .content a{
+        padding: 10px;
+        background: white;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 550;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .home .content a:hover{
+        background: #ffa500;
+        color: white;
+    }
+    @media (max-width:850px){
+        .home{
+            background-position: 50%;
+        }
+    }
+    @media (max-width:450px){
+        .home .content h5{
+            font-size: 25px;
+        }
+        .home .content h1{
+            font-size: 38px;
+        }
+        .home .content p{
+            font-size: 13px;
+        }
+    }
+    .containere {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          
+        }
+    
+        h1 {
+          color: #004080;
+          margin-bottom: 20px;
+        }
+    
+        p {
+          margin-bottom: 15px;
+        }
+        .img-about {
+          width: 70px;
+          height: 70px;
+          margin-right: 20px;
+          border-radius: 50%;
+          object-fit: cover;
+          float: right;
+      }
+        .about-info {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .team-members {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 20px;
+        }
+    
+        .team-member {
+          max-width: 300px;
+          margin: 10px;
+          padding: 15px;
+          background-color: #bafdca;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(160, 232, 213, 0.1);
+          text-align: center;
+        }
+    
+        .team-member img {
+          max-width: 100px;
+          height: auto;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+        body{
+  background-color: #c4dbf5;
+}
+/* Home Section End */
+    </style>
+</head>
+<body id="top">
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+    <div class="header-top">
+      <div class="container">
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+        <a href="#" class="logo">
+          <img src="./images/logo.jpg" alt="Tourly logo">
+        </a>
+        <div class="header-btn-group">
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+          <nav class="navbar" data-navbar>
+             <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./images/logo.jpg" alt="Tourly logo">
+            </a>
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+       </div>
+       <ul class="navbar-list">
+        <li><a href="index.html">Home</a></li> &nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="aboutus.html" onclick="toggleAbout()">About us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="activities.html">Activités</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="cuisine.html">Cuisine</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="accomendation.html">Hébergement</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="transporation.html">Transporation</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="faqs.html">FAQ</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="contactus.html">Contactez-nous</a></li>
+        <li><a href="login.html">Login</a></li>
+     </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+          <!-- Home Section Start -->
+    <div class="home">
+      <div class="content">
+          <h5>Welcome To 101M </h5>
+          <h1>Wanna Discover MOROCCO?<span class="changecontent"></span></h1>
+          <p>right place,right time!</p>
+      </div>
+  </div>
+  <div class="bodyy">
+  <table>
+    <tr>
+      <td style="color: transparent;">Vous etes deja un membre?</td>
+      <td style="color: transparent;">Devenir un membre?</td>
+    </tr>
+    <tr>
+      <td>&nbsp; &nbsp; &nbsp; &nbsp; </td>
+      <td> 
+         <div class="containers">
+        <div class="wrapper">
+          <div class="title"><span>Login Form</span></div>
+          <form action="#">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Email or Phone" required>
+            </div>
+            <div class="row">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="pass"><a href="#">Forgot password?</a></div>
+            <div class="row button">
+              <input type="submit" value="Login">
+            </div>
+          </form>
+        </div>
+        </div>
+      </td>
+      <td>&nbsp; &nbsp; &nbsp; &nbsp; </td>
+      <td> 
+        <div class="containers">
+       <div class="wrapper">
+         <div class="title"><span>Sign up  Form</span></div>
+         <form action="#">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="" placeholder="full Name" required>
+          </div>
+           <div class="row">
+             <i class="fas fa-user"></i>
+             <input type="" placeholder="Email or Phone" required>
+           </div>
+           <div class="row">
+             <i class="fas fa-lock"></i>
+             <input type="password" placeholder="Password" required>
+           </div>
+           <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password Again" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="" placeholder="Sexe" required>
+          </div>
+           <div class="row button">
+             <input type="submit" value="Sign In">
+           </div>
+         </form>
+       </div>
+       </div>
+     </td>
+
+    </tr>
+  </table>
+
+</div>
+
+   <main>
+    <article>
+      
+    </article></main>
+  
+
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+        <section class="cta" id="contact">
+          <div class="container">
+  
+            <div class="cta-content">
+              <p class="section-subtitlee" >Appel à l'action</p>
+  
+              <h2 class="h2 section-title">Prêt pour un voyage inoubliable. Souvenez-vous de nous !</h2>
+  
+              <p><img src="./images/logo.jpg" alt="Sahara Desert" align="right" class="img-about"><strong>Découvrez mieux le Maroc pour vivre une expérience mémorable et avoir une idée générale du pays.</strong></p>
+            </li><br><br>
+            </div>
+  
+          </div>
+        </section>
+    </article>
+    <footer class="footer">
+
+      <div class="footer-top">
+        <div class="container">
+  
+          <div class="footer-brand">
+  
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" alt="Tourly logo">
+            </a>
+  
+            <p class="footer-text">
+              "Explorez les merveilles du Maroc ! Découvrez des trésors cachés, des richesses culturelles et des astuces d'initiés pour un voyage inoubliable. Votre porte d'entrée vers le monde enchanteur du Maroc vous attend."
+            </p>
+  
+          </div>
+  
+          <div class="footer-contact">
+  
+            <h4 class="contact-title">Contact Us</h4>
+  
+            <p class="contact-text">
+               wanna add your journey in our website?Feel free to contact and reach us !!
+            </p>
+            <!-- Boîte de recherche -->
+
+
+<!-- Votre contenu existant -->
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const searchResults = document.getElementById('searchResults');
+
+  // Associez chaque section avec l'URL de la page correspondante
+  const countries = [
+      { name: "cuisine", url: "cuisine.html" },
+      { name: "transport", url: "transport.html" },
+      { name: "about-us", url: "aboutus.html" },
+      { name: "FAQ", url: "faqs.html" },
+      { name: "activitie", url: "activities.html" },
+      { name: "home", url: "index.html" },
+      {name: "home", url: "contactus.html"},
+      {name: "home", url: "login.html"},
+      {name: "home", url: "accomendation.html"}
+
+  ];
+
+  function displayResults(results) {
+      searchResults.innerHTML = '';
+      results.forEach(result => {
+          const div = document.createElement('div');
+          div.textContent = result.name;
+          div.addEventListener('click', () => {
+              searchInput.value = result.name;
+              searchResults.innerHTML = '';
+              window.location.href = result.url; // Redirige vers la page correspondante
+          });
+          searchResults.appendChild(div);
+      });
+  }
+
+  searchInput.addEventListener('input', () => {
+      const searchText = searchInput.value.toLowerCase();
+      const filteredResults = countries.filter(country => country.name.toLowerCase().includes(searchText));
+      displayResults(filteredResults);
+  });
+
+  document.addEventListener('click', (e) => {
+      if (!searchResults.contains(e.target) && e.target !== searchInput) {
+          searchResults.innerHTML = '';
+      }
+  });
+</script>
+  
+            <ul>
+  
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+  
+                <a href="tel:+01123456790" class="contact-link">+212615633295</a>
+              </li>
+  
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+  
+                <a href="mailto:info.tourly.com" class="contact-link">info-101M.com</a>
+              </li>
+  
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+  
+                <address>3146 Koontz, RABAT</address>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+          <div class="footer-form">
+  
+            <p class="form-text">
+              Subscribe our website for more update & news !!
+            </p>
+  
+            <form action="" class="form-wrapper">
+              <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+  
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="container">
+  
+          <p class="copyright">
+            &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+          </p>
+  
+          <ul class="footer-bottom-list">
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+      </div>
+  
+    </footer>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+      

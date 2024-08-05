@@ -1,0 +1,3060 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Restoran - Bootstrap Restaurant Template</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="" name="keywords">
+
+    <meta content="" name="description">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-pou73ViArZgHMUNv0Hd0cbJEeeS3jyeZwTNmLpv+fr7kkFmYUr8ERi5mZ8Ywmh0Jp4pDLMNSf37J1huMewKt5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ 
+
+    <!-- Favicon -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css rel="stylesheet">
+
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css rel="stylesheet">
+
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+
+    <link href=https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap rel="stylesheet">
+
+ 
+
+    <!-- Icon Font Stylesheet -->
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css rel="stylesheet">
+
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css rel="stylesheet">
+
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Cuisine</title>
+
+ 
+
+    <!-- Google Web Fonts -->
+
+    <link rel="preconnect" href=https://fonts.googleapis.com>
+
+    <link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
+
+    <link href=https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap rel="stylesheet">
+
+ 
+
+    <!-- Icon Font Stylesheet -->
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css rel="stylesheet">
+
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css rel="stylesheet">
+
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip Guide TO MOROCCO</title>
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <html lang="en">
+    <!-- Libraries Stylesheet -->
+
+   
+
+ 
+
+   
+
+ 
+
+    <!-- Template Stylesheet -->
+
+    <style>
+
+        :root {
+
+    --primary: #FEA116;
+
+    --light: #F1F8FF;
+
+    --dark: #0F172B;
+
+}
+
+.nav-pills .nav-item .active {
+
+          border-bottom: 2px solid orange;
+
+        }
+
+        .tab-class i{
+
+            color: orange !important;
+
+        }
+
+.ff-secondary {
+
+    font-family: 'Pacifico', cursive;
+
+}
+
+ 
+
+.fw-medium {
+
+    font-weight: 600 !important;
+
+}
+
+ 
+
+.fw-semi-bold {
+
+    font-weight: 700 !important;
+
+}
+
+ 
+
+/*** Section Title ***/
+
+.section-title {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+ 
+
+.section-title::before {
+
+    position: absolute;
+
+    content: "";
+
+    width: 45px;
+
+    height: 2px;
+
+    top: 50%;
+
+    left: -55px;
+
+    margin-top: -1px;
+
+    background: var(--primary);
+
+}
+
+ 
+
+.section-title::after {
+
+    position: absolute;
+
+    content: "";
+
+    width: 45px;
+
+    height: 2px;
+
+    top: 50%;
+
+    right: -55px;
+
+    margin-top: -1px;
+
+    background: var(--primary);
+
+}
+
+ 
+
+.section-title.text-start::before,
+
+.section-title.text-end::after {
+
+    display: none;
+
+}
+
+ 
+
+ 
+
+/*** Service ***/
+
+.service-item {
+
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+
+    transition: .5s;
+
+}
+
+ 
+
+.service-item:hover {
+
+    background: var(--primary);
+
+}
+
+ 
+
+.service-item * {
+
+    transition: .5s;
+
+}
+
+ 
+
+.service-item:hover * {
+
+    color: var(--light) !important;
+
+}
+
+ 
+
+ 
+
+/*** Food Menu ***/
+
+.nav-pills .nav-item .active {
+
+    border-bottom: 2px solid var(--primary);
+
+}
+
+
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+   }
+
+   /* Home Section Start */
+   .home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(./images/Couscous\ tunisien.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Pastilla";}
+    10%{content: "Merouzia";}
+    20%{content: "Zaalook";}
+    30%{content: "Couscous";}
+    40%{content: "Briouat ";}
+    50%{content: "Tajine";}
+    60%{content: "Harira";}
+    70%{content: "Al Fekkas";}
+    80%{content: "Seffa";}
+    90%{content: "Mhancha";}
+    100%{content: "Kaab 'gazelle";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+.container-content {
+          max-width: 1100px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2.section-title {
+          color: #333;
+          text-align: center;
+      }
+      p.section-subtitle {
+          text-align: center;
+          font-size: 1.2em;
+          color: whitesmoke;
+          margin-bottom: 20px;
+      }
+      p.section-subtitlee {
+          text-align: center;
+          font-size: 1.2em;
+          color: whitesmoke;
+          margin-bottom: 20px;
+      }
+      .img-about {
+          width: 70px;
+          height: 70px;
+          margin-right: 20px;
+          border-radius: 50%;
+          object-fit: cover;
+          float: right;
+      }
+      ul {
+          list-style-type: none;
+          padding-left: 0;
+      }
+      li {
+          margin-bottom: 20px;
+      }
+      strong {
+          color: #007bff;
+      }
+      :root {
+  
+  
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+
+  --fs-1: calc(20px + 3.5vw);
+  --fs-2: calc(18px + 1.6vw);
+  --fs-3: calc(16px + 0.45vw);
+  --fs-4: 15px;
+  --fs-5: 14px;
+  --fs-6: 13px;
+  --fs-7: 12px;
+  --fs-8: 11px;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+
+  --transition: 0.25s ease-in-out;
+
+  --section-padding: 60px;
+
+  --radius-15: 15px;
+  --radius-25: 25px;
+
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a,
+img,
+span,
+input,
+label,
+button,
+ion-icon { display: block; }
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button { cursor: pointer; }
+
+input { width: 100%; }
+
+ion-icon { pointer-events: none; }
+
+html {
+  font-family: var(--ff-poppins);
+  scroll-behavior: smooth;
+}
+
+body { background: var(--white); }
+
+.container { padding-inline: 15px; }
+
+.btn {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: var(--fs-5);
+  border-radius: 100px;
+  padding: var(--padding, 8px 18px);
+  border: var(--border-width, 2px) solid transparent;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--bright-navy-blue);
+  border-color: var(--bright-navy-blue);
+}
+
+.btn-primary:is(:hover, :focus) {
+  background: var(--yale-blue);
+  border-color: var(--yale-blue);
+}
+
+.btn-secondary { border-color: var(--white); }
+
+.btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
+
+.h1,
+.h2,
+.h3 {
+  font-weight: var(--fw-800);
+  font-family: var(--ff-montserrat);
+  text-transform: uppercase;
+}
+
+.h1 {
+  color: var(--white);
+  font-size: var(--fs-1);
+}
+
+.h2,
+.h3 { color: var(--gunmetal); }
+
+.h2 { font-size: var(--fs-2); }
+
+.h3 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+}
+
+.section-subtitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--ff-montserrat);
+  margin-bottom: 8px;
+  background-color: rgb(86, 145, 191);
+}
+
+.section-title { margin-bottom: 15px; }
+
+.section-text {
+  color: var(--black-coral);
+  margin-bottom: 30px;
+}
+
+.card-text {
+  color: var(--black-coral);
+  font-size: var(--fs-5);
+}
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 61px;
+  z-index: 4;
+}
+
+.header-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: var(--transition);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  padding-block: 15px;
+  z-index: 1;
+}
+
+.header.active .header-top {
+  position: fixed;
+  background: var(--gunmetal);
+}
+
+.header-top .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.helpline-box .wrapper { display: none; }
+
+.helpline-box .icon-box {
+  background: var(--bright-navy-blue);
+  padding: 6px;
+  border-radius: 50%;
+  color: var(--white);
+}
+
+.helpline-box .icon-box ion-icon { --ionicon-stroke-width: 40px; }
+
+
+.header-top .logo { margin-inline: auto;
+  width: 40px;
+  height: 40px; 
+align-self: center;}
+
+.header-top .logo img { max-width: 10px; 
+  width: 40px;
+  height: 40px;}
+
+.header-bottom .logo { margin-inline: auto;
+    width: 40px;
+    height: 40px; 
+  align-self: center;}
+  
+.header-bottom .logo img { max-width: 10px; 
+    width: 40px;
+    height: 40px;}
+
+
+.header-btn-group {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+}
+
+.search-btn,
+.nav-open-btn {
+  font-size: 30px;
+  color: inherit;
+}
+
+.search-btn { font-size: 20px; }
+
+.header-bottom { border-bottom: 1px solid hsla(0, 0%, 100%, 0.1); }
+
+.header-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 15px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-link {
+  color: var(--white);
+  padding: 8px;
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  border-radius: 50%;
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.social-link:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.2); }
+
+.header .btn { --padding: 4px 20px; }
+
+.header .navbar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  background: var(--white);
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.15s ease-in;
+  z-index: 3;
+}
+
+.navbar.active {
+  right: 0;
+  visibility: visible;
+  pointer-events: all;
+  transition: 0.25s ease-out;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+.navbar-top .logo img { width: 150px; }
+
+.nav-close-btn {
+  font-size: 20px;
+  color: var(--bright-navy-blue);
+}
+
+.nav-close-btn ion-icon { --ionicon-stroke-width: 80px; }
+
+.navbar {
+  background-color: #534068;
+  color: #5b1594;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: #fbfbfc;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar ul li a:hover {
+  background-color: #f9f8fb;
+  color: black;
+}
+
+
+.navbar-link {
+  padding: 15px 20px;
+  color: var(--jet);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-4);
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+
+.navbar-link:is(:hover, :focus) { color: var(--bright-navy-blue); }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  transition: var(--transition);
+}
+
+.overlay.active {
+  opacity: 0.7;
+  pointer-events: all;
+}
+
+.hero {
+  /*background-image: url("../images/hero-banner.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-blend-mode: overlay;
+  display: grid;
+  place-items: center;
+  min-height: 600px;
+  text-align: center;
+  padding-top: 125px;
+}
+
+.hero-title { margin-bottom: 20px; }
+
+.hero-text {
+  color: var(--white);
+  font-size: var(--fs-5);
+  margin-bottom: 40px;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tour-search {
+  background: var(--bright-navy-blue);
+  padding-block: var(--section-padding);
+}
+
+.tour-search-form .input-label {
+  color: var(--white);
+  font-size: var(--fs-4);
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.tour-search-form .input-field {
+  background: var(--white);
+  padding: 10px 15px;
+  font-size: var(--fs-5);
+  border-radius: 50px;
+}
+
+.tour-search-form .input-field::placeholder { color: var(--spanish-gray); }
+
+.tour-search-form .input-field::-webkit-datetime-edit {
+  color: var(--spanish-gray);
+  text-transform: uppercase;
+}
+
+.tour-search-form .input-wrapper { margin-bottom: 15px; }
+
+.tour-search .btn {
+  width: 100%;
+  --border-width: 1px;
+  font-weight: var(--fw-600);
+  margin-top: 35px;
+}
+
+.popular { padding-block: var(--section-padding); }
+
+.popular-list,
+.popular-list > li:not(:last-child) { margin-bottom: 30px; }
+
+.popular-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-25);
+  height: 430px;
+}
+
+.popular-card .card-img { height: 100%; }
+
+.popular-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular-card .card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: var(--white);
+  border-radius: var(--radius-25);
+  padding: 20px;
+}
+
+
+.popular-card .card-rating {
+  background: var(--bright-navy-blue);
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  transform: translateY(-50%);
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.popular-card .card-subtitle {
+  color: var(--blue-ncs);
+  font-size: var(--fs-6);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.popular-card .card-title { margin-bottom: 5px; }
+
+.popular-card :is(.card-subtitle, .card-title) > a { color: inherit; }
+
+.popular .btn { margin-inline: auto; }
+
+.package { padding-block: var(--section-padding); }
+
+.package-list { margin-bottom: 40px; }
+
+.package-list > li:not(:last-child) { margin-bottom: 30px; }
+
+.package-card {
+  background: var(--cultured);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.package-card .card-banner { height: 250px; }
+
+.package-card .card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.package-card .card-content { padding: 30px 20px; }
+
+.package-card .card-title { margin-bottom: 15px; }
+
+.package-card .card-text {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-meta-list {
+  background: var(--white);
+  max-width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.15);
+  border-radius: 50px;
+}
+
+.card-meta-item { position: relative; }
+
+.card-meta-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -1px;
+  bottom: 4px;
+  width: 1px;
+  background: hsla(0, 0%, 0%, 0.3);
+}
+
+.meta-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-inline: 9px;
+  color: var(--black-coral);
+  font-size: var(--fs-8);
+}
+
+.meta-box > ion-icon {
+  color: var(--bright-navy-blue);
+  font-size: 13px;
+}
+
+.package-card .card-price {
+  background: var(--united-nations-blue);
+  color: var(--white);
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.package-card .card-price .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.package-card .card-price .reviews { font-size: var(--fs-5); }
+
+.package-card .card-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  font-size: 14px;
+}
+
+.package-card .card-rating ion-icon:last-child { color: hsl(0, 0%, 80%); }
+
+.package-card .price {
+  font-size: var(--fs-2);
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-800);
+  margin-bottom: 20px;
+}
+
+.package-card .price span {
+  font-size: var(--fs-7);
+  font-weight: initial;
+}
+
+.package .btn { margin-inline: auto; }
+
+.gallery { padding-block: var(--section-padding); }
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-15);
+  overflow: hidden;
+}
+
+.gallery-item:nth-child(3) { grid-area: 1 / 2 / 3 / 3; }
+
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta {
+  background: var(--bright-navy-blue);
+  padding-block: var(--section-padding);
+}
+
+.cta :is(.section-subtitle, .section-title, .section-text) { color: var(--white); }
+
+.cta .section-text { font-size: var(--fs-5); }
+
+.footer-top {
+  background: var(--gunmetal);
+  padding-block: var(--section-padding);
+  color: var(--gainsboro);
+}
+
+.footer-brand { margin-bottom: 30px; }
+
+.footer-brand img { width: 180px; }
+
+.footer-brand .logo { margin-bottom: 20px; }
+
+.footer-text {
+  font-size: var(--fs-5);
+  line-height: 1.7;
+}
+
+.footer-contact { margin-bottom: 30px; }
+
+.contact-title {
+  position: relative;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-500);
+  margin-bottom: 30px;
+}
+
+.contact-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--bright-navy-blue);
+}
+
+.contact-text {
+  font-size: var(--fs-5);
+  margin-bottom: 15px;
+  max-width: 200px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-item ion-icon { --ionicon-stroke-width: 40px; }
+
+.contact-link,
+address {
+  font-style: normal;
+  color: var(--gainsboro);
+  font-size: var(--fs-5);
+}
+
+.contact-link:is(:hover, :focus) { color: var(--white); }
+
+.form-text {
+  font-size: var(--fs-5);
+  margin-bottom: 20px;
+}
+
+.footer-form .input-field {
+  background: var(--white);
+  font-size: var(--fs-5);
+  padding: 15px 20px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-form .btn { width: 100%; }
+
+.footer-bottom {
+  --gunmetal: hsl(205, 36%, 17%);
+  background: var(--gunmetal);
+  padding-block: 20px;
+  text-align: center;
+}
+
+.copyright {
+  color: var(--gainsboro);
+  font-size: var(--fs-5);
+  margin-bottom: 10px;
+}
+
+.copyright a {
+  color: inherit;
+  display: inline-block;
+}
+
+.copyright a:is(:hover, :focus) { color: var(--white); }
+
+.footer-bottom-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+
+.footer-bottom-list > li { position: relative; }
+
+.footer-bottom-list > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  bottom: 3px;
+  width: 1px;
+  background: hsla(0, 0%, 100%, 0.2);
+}
+
+.footer-bottom-link {
+  color: var(--gainsboro);
+  font-size: var(--fs-7);
+  transition: var(--transition);
+}
+
+.footer-bottom-link:is(:hover, :focus) { color: var(--white); }
+.go-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background: var(--bright-navy-blue);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.go-top.active {
+  opacity: 0.8;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.go-top:is(:hover, :focus) { opacity: 1; }
+/**
+ * responsive for larger than 580px screen
+ */
+
+@media (min-width: 580px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 580px;
+    margin-inline: auto;
+  }
+
+  .btn {
+    --fs-5: 16px;
+    --padding: 12px 30px;
+  }
+
+  section:not(.cta) :is(.section-subtitle, .section-title, .section-text) {
+    text-align: center;
+  }
+
+  .section-text { margin-bottom: 40px; }
+
+  .card-text { --fs-5: 15px; }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .header { padding-top: 83px; }
+
+  .helpline-box .icon-box { padding: 14px; }
+
+  .header-top .logo img { max-width: unset; }
+
+  .search-btn { font-size: 30px; }
+
+  .nav-open-btn { font-size: 40px; }
+
+  .header .btn {
+    --fs-5: 14px;
+    --padding: 6px 20px;
+  }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    min-height: 800px;
+    padding-top: 85px;
+  }
+
+  .hero-text { --fs-5: 15px; }
+
+  .btn-group { gap: 20px; }
+
+
+
+  /**
+   * TOUR SEARCH
+   */
+
+  .tour-search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .tour-search-form .input-wrapper { margin-bottom: 0; }
+
+  .tour-search-form .input-field { padding: 16px 20px; }
+
+  .tour-search .btn {
+    grid-column: span 2;
+    margin-top: 20px;
+  }
+
+
+
+  /**
+   * POPULAR
+   */
+
+  .popular-card .card-content { right: auto; }
+
+
+
+  /**
+   * FOOTER
+   */
+   .container-content1 {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container-content2 {
+            max-width: 500px;
+            margin: 20px auto;
+            margin-right:20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+  .footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-form { grid-column: span 2; }
+
+  .footer-bottom { text-align: left; }
+
+  .copyright { margin-bottom: 0; }
+
+  .footer-bottom-list { justify-content: flex-end; }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-5: 15px;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 800px; }
+
+  .section-text {
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .helpline-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .helpline-box .wrapper {
+    display: block;
+    color: var(--white);
+    font-size: var(--fs-6);
+  }
+
+  .social-list { gap: 10px; }
+
+
+
+  /**
+   * POPULAR
+   */
+
+  .popular-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .popular-list > li:not(:last-child) { margin-bottom: 0; }
+
+  .popular-card .card-content { right: 20px; }
+
+
+
+  /**
+   * PACKAGE
+   */
+
+  .package-list { margin-bottom: 50px; }
+
+  .package-list > li:not(:last-child) { margin-bottom: 40px; }
+
+  .package-card {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 1fr;
+  }
+
+  .package-card .card-banner { height: 100%; }
+
+  .package-card .card-content { padding: 40px; }
+
+  .package-card .card-price {
+    display: grid;
+    place-content: center;
+  }
+
+  .package-card .card-price .wrapper { margin-bottom: 15px; }
+
+
+
+  /**
+   * GALLERY
+   */
+
+  .gallery { padding-bottom: calc(var(--section-padding * 2)); }
+
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-image { border-radius: var(--radius-25);}
+
+
+
+  /**
+   * CTA
+   */
+
+  .cta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta-content { width: calc(100% - 225px); }
+
+  .cta .section-text { margin-inline: 0; }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .form-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-form .input-field { margin-bottom: 0; }
+
+  .footer-form .btn { width: max-content; }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 992px screen
+ */
+
+@media (min-width: 992px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 1050px; }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .header.active .header-top {
+    position: unset;
+    background: unset;
+  }
+
+  .nav-open-btn,
+  .navbar-top { display: none; }
+
+  .header-bottom { border-bottom: none; }
+
+  .header.active .header-bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    color: var(--onyx);
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.08);
+    transition: var(--transition);
+  }
+
+  .header-bottom .container { padding-block: 0; }
+
+  .header .navbar { all: unset; }
+
+  .navbar-list {
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-list li { border-bottom: none; }
+
+  .navbar-link {
+    color: var(--white);
+    --fs-4: 16px;
+    font-weight: unset;
+    text-transform: uppercase;
+    padding: 20px 15px;
+  }
+
+  .header.active .navbar-link { color: var(--onyx); }
+
+  .header.active .navbar-link:is(:hover, :focus) { color: var(--bright-navy-blue); }
+
+  .header.active .social-link {
+    color: var(--onyx);
+    border-color: hsla(0, 0%, 0%, 0.15);
+  }
+
+  .overlay { display: none; }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero .container { max-width: 740px; }
+
+
+
+  /**
+   * TOUR SEARCH
+   */
+
+  .tour-search-form { grid-template-columns: repeat(5, 1fr); }
+
+  .tour-search .btn {
+    --padding: 15px;
+    grid-column: unset;
+    margin-top: 0;
+  }
+
+
+
+  /**
+   * POPULAR
+   */
+
+  .popular-list { grid-template-columns: repeat(3, 1fr); }
+
+
+
+  /**
+   * PACKAGE
+   */
+
+  .meta-box { --fs-8: 13px; }
+
+  .meta-box > ion-icon { font-size: 15px; }
+
+
+
+  /**
+   * CTA 
+   */
+
+  .cta .section-title { max-width: 25ch; }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-top .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+
+  .footer-form { grid-column: unset; }
+
+  .form-wrapper { flex-direction: column; }
+
+  .footer-form .btn { width: 100%; }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 100px;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 1180px; }
+
+}
+h1{
+    text-align: center;
+}
+/* Home Section End */
+    </style>
+
+</head>
+
+ 
+
+<body id="top">
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+        
+        <a href="#" class="logo">
+          <img src="./images/logo.jpg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+          <nav class="navbar" data-navbar>
+             <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./images/logo.jpg" alt="101M logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+       </div>
+
+       <ul class="navbar-list">
+        <li><a href="index.html">Home</a></li> &nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="aboutus.html" onclick="toggleAbout()">About us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="activities.html">Activités</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="cuisine.html">Cuisine</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="accomendation.html">Hébergement</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="transporation.html">Transporation</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="faqs.html">FAQ</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="contactus.html">Contactez-nous</a></li>
+        <li><a href="login.html">Login</a></li>
+     </ul>
+
+        </nav>
+
+
+      </div>
+    </div>
+
+  </header>
+  <article>
+
+    <!-- 
+      - #HERO
+    -->
+        <!-- Home Section Start -->
+  <div class="home">
+    <div class="content">
+        <h5>Welcome To MOROCCO</h5>
+        <h1>Try<span class="changecontent"></span></h1>
+        <p>get to know the delicious traditional dishes and meals,the diffrent tastes,the sweets  and more...</p> 
+        <!-- Boîte de recherche -->
+
+
+<!-- Votre contenu existant -->
+
+
+    </div>
+  </div>
+<!-- Home Section End -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--
+      - #ABOUTMOROCCO
+    -->
+  <!DOCTYPE html>
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Rechercher" >
+    <span id="searchIcon"><i class="fa fa-search"></i></span>
+    <div id="searchResults"></div>
+  </div>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+  
+    // Associez chaque section avec l'URL de la page correspondante
+    const countries = [
+        { name: "cuisine", url: "cuisine.html" },
+        { name: "transport", url: "transporation.html" },
+        { name: "about-us", url: "aboutus.html" },
+        { name: "FAQ", url: "faqs.html" },
+        { name: "mnbv", url: "faqs.html#activitésss" },
+        { name: "activitiés", name:"ski", url: "activities.html" },
+        { name: "home", url: "index.html" },
+        {name: "contact", url: "contactus.html"},
+        {name: "log in", url: "login.html"},
+        {name: "hebergement", url: "accomendation.html"}
+  
+    ];
+  
+    function displayResults(results) {
+        searchResults.innerHTML = '';
+        results.forEach(result => {
+            const div = document.createElement('div');
+            div.textContent = result.name;
+            div.addEventListener('click', () => {
+                searchInput.value = result.name;
+                searchResults.innerHTML = '';
+                window.location.href = result.url; // Redirige vers la page correspondante
+            });
+            searchResults.appendChild(div);
+        });
+    }
+  
+    searchInput.addEventListener('input', () => {
+        const searchText = searchInput.value.toLowerCase();
+        const filteredResults = countries.filter(country => country.name.toLowerCase().includes(searchText));
+        displayResults(filteredResults);
+    });
+  
+    document.addEventListener('click', (e) => {
+        if (!searchResults.contains(e.target) && e.target !== searchInput) {
+            searchResults.innerHTML = '';
+        }
+    });
+  </script>
+      <style>
+        .search-container{
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* Hauteur de la page */
+        }        
+        #searchInput {
+            width: 300px; /* Ajustez la largeur de la boîte de recherche selon vos besoins */
+            padding: 10px;
+            border: 2px solid #060404;
+            border-radius: 20px; /* Coins arrondis */
+            font-size: 16px; /* Taille de police */
+            outline: none;
+            color: #0e0a0a;
+            background-color: white;
+        }
+
+        #searchIcon {
+            position: relative;
+            left: -35px; /* Ajustez selon vos besoins */
+            top: 3px; /* Ajustez selon vos besoins */
+            color: #0e0a0a; /* Couleur de l'icône */
+            cursor: pointer;
+        }
+
+        #searchIcon i {
+            font-size: 20px; /* Taille de l'icône */
+        }
+
+        #searchResults {
+            position: absolute;
+            background-color: white;
+            border: 1px solid transparent;
+            max-height: 200px;
+            overflow-y: auto;
+            width: 300px; /* Ajustez la largeur pour correspondre à la boîte de recherche */
+            z-index: 1000;
+        }
+
+        #searchResults div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #searchResults div:hover {
+            background-color: #eee;
+        }
+    </style>
+  <div class="container-contentt">
+    <div class="container-xxl py-5">
+
+      <div class="container">
+
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+
+              <h5 class="section-title ff-secondary text-center text-primary fw-normal text-capitalize">Déguster</h5>
+
+              <h1 class="mb-5">Articles les plus populaires</h1>
+
+          </div>
+
+          <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+
+              <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+
+                  <li class="nav-item">
+
+                      <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1" style="text-decoration: none;">
+
+                          <i class="fa fa-coffee fa-2x text-primary"></i>
+
+                          <div class="ps-3">
+
+                              <small class="text-body">Spécialités</small>
+
+                              <h6 class="mt-n1 mb-0" style="color: black;">typiques</h6>
+
+                          </div>
+
+                      </a>
+
+                  </li>
+
+                  <li class="nav-item">
+
+                      <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2" style="text-decoration: none;">
+
+                          <i class="fa fa-hamburger fa-2x text-primary"></i>
+
+                          <div class="ps-3">
+
+                              <small class="text-body">Plat </small>
+
+                              <h6 class="mt-n1 mb-0" style="color: black;">principal</h6>
+
+                          </div>
+
+                      </a>
+
+                  </li>
+
+                  <li class="nav-item">
+
+                      <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3" style="text-decoration: none;">
+
+                          <i class="fa fa-utensils fa-2x text-primary"></i>
+
+                          <div class="ps-3">
+
+                              <small class="text-body">Lovely</small>
+
+                              <h6 class="mt-n1 mb-0" style="color: black;">Pâtisserie</h6>
+
+                          </div>
+
+                      </a>
+
+                  </li>
+
+              </ul>
+
+              <div class="tab-content">
+
+                  <div id="tab-1" class="tab-pane fade show p-0 active">
+
+                      <div class="row g-4">
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://paramourdesbonneschoses.fr/wp-content/uploads/2016/01/DSC_0132_Snapseedgg.jpg alt="" style="width: 80px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Briouat au poulet </span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Briouate au poulet, délice croustillant."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://www.maspatule.com/blog/wp-content/uploads/2022/03/P1180949-1440x1918.jpg alt="" style="width: 80px; height:50px">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Briouate amandes</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">"Briouate au poulet, délice croustillant."
+
+                                      </small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNOepQceN-F5bWe3Q4fn973IJMAGdUn-an0m5gmPlLg&s alt="" style="width: 80px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span> Tektouka</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">"Tektouka, une salade marocaine épicée."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://cdn.pratico-pratiques.com/app/uploads/sites/4/2018/08/30192644/salade-de-betteraves.jpeg alt="" style="width: 80px; height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          Salade de betterave
+
+                                      </h5>
+
+                                      <small class="fst-italic">Une délicieuse association entre la betterave et l’oignon !</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://www.cuisinonsencouleurs.fr/wp-content/uploads/2018/10/khizou-mchermel-16-683x1024.jpg alt="" style="width: 80px; height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span> Khizou mchermel </span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Khizou mchermel, une salade marocaine colorée."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://img.cuisineaz.com/1024x1024/2015/07/21/i18462-salade-de-riz-aux-tomates-thon-mais-et-olives.webp alt="" style="width: 80px; height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Salade de riz au thon et au maïs </span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">"Salade de riz: thon, maïs, fraîcheur."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlARmnAM_GZXvHRx8nAUh_r_nir3jLSlBhFb0nsxr1hA&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Zaalouk d’aubergines à la chermoula </span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">"Zaalouk d'aubergines: chermoula, délice marocain."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://www.cuisinonsencouleurs.fr/wp-content/uploads/2020/05/foul-mchermel-2.jpg alt="" style="width: 80px; height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Foul Mchermel </span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">"Foul Mchermel: goût marocain authentique."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+                  <div id="tab-2" class="tab-pane fade show p-0">
+
+                      <div class="row g-4">
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://www.diari.tn/sites/default/files/image/recette/couscous-viande_0.jpg alt="" style="width: 80px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Le Couscous</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Plat savoureux et convivial traditionnel."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhHsKrqFoLg2_EUkEnIFnxpp-er8wvG5z2QVjVXAeyxA&s alt="" style="width: 80px; height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Le Tajine</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Un mélange exquis de viande, légumes et épices mijotés lentement."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src="data:image/jpeg;base64,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" alt="" style="width: 80px; height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Pastilla</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">"Délicieux plat marocain feuilleté succulent."
+
+                                      </small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapEqMv4XMuI2YOEB6873r2Rxn_Sria10LEmyH_BzkzQ&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Rfissa</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">"
+
+                                          Savoureux plat marocain aux lentilles."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiadg53vlrhQ1xCMg33oizjQvVu0nGbedA3s1NTyL6Q&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Merouzia</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Plat traditionnel marocain sucré-épicé délicieusement mijoté."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JCCZciH_4X1AuJfoqJFfHxinBhvXFABA-be1Sr3Saw&s alt="" style="width: 80px; height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Poulet mhamer</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">"
+
+                                          Délicieux poulet marocain mijoté lentement."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HX64vHG2hlWSPwmr4UBJPr2vyuyep6PAP3JpkqW2RA&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Seffa</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">"
+
+                                          Délicieuse semoule marocaine parfumée et légère."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src="data:image/jpeg;base64,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" alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Harira</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Délicieuse soupe marocaine nourrissante et parfumée."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+                  <div id="tab-3" class="tab-pane fade show p-0">
+
+                      <div class="row g-4">
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2xsom2nKUCV-QnQazsQBk_wScC0ZTXTx3AS5-jwjcw&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>La Chebakia</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Délicieuse pâtisserie marocaine croustillante et mielleuse."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://img.cuisineaz.com/660x660/2016/09/19/i3488-la-corne-de-gazelle.jpeg alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Les cornes de gazelle</span>
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Délicieuses pâtisseries marocaines fines et sucrées."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxaC8dYsiUQtYfIGliBNBuK1LHwN503olavstApyyBg&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Mhancha</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Délicieuse pâtisserie marocaine enroulée délicatement."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS31OruCS8aCYdVOfvr4iPBsFhsN1h--q7Tq9Up-mnNBg&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>El Makrout </span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Délicieuse pâtisserie marocaine frite et sucrée."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9mMMI4Mp-mckOYv__kIl23lE6duEes_38AbaRG0otQ&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Al Fekkas </span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">"Délicieux biscuit marocain croquant et parfumé."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTStixtZv0kie-3bbkC7jlHWO__z5bvvqc3Digv9-zNig&s alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Bechkito</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Délicieux en-cas marocain sucré et épicé."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://img.cuisineaz.com/660x660/2016/06/23/i1475-sellou-marocain.jpeg alt="" style="width: 80px;height: 55px;">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Sellou</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Friandise marocaine nutritive et parfumée."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="d-flex align-items-center">
+
+                                  <img class="flex-shrink-0 img-fluid rounded" src=https://i0.wp.com/cuisinedefadila.com/wp-content/uploads/2015/01/bahla-2-sur-3-2.jpg?fit=920%2C1000&ssl=1 alt="" style="width: 80px;height:55px">
+
+                                  <div class="w-100 d-flex flex-column text-start ps-4">
+
+                                      <h5 class="d-flex justify-content-between border-bottom pb-2">
+
+                                          <span>Bahla</span>
+
+                                         
+
+                                      </h5>
+
+                                      <small class="fst-italic">
+
+                                          "Délicieuse pâtisserie marocaine croustillante et sucrée."</small>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+  </div>
+
+
+
+    <!-- 
+      - #CTA
+    -->
+    <style>input[type="text"],
+      textarea {
+          width: 100%;
+          padding: 8px;
+          margin: 5px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+      }
+
+      textarea {
+          height: 80px;
+          resize: vertical;
+      }
+
+      button {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+          transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+          background-color: #555;
+      }
+
+      .comment {
+          margin-top: 20px;
+          padding: 10px;
+          background-color: #ddd;
+          border-radius: 5px;
+      }
+
+      .comment strong {
+          font-weight: bold;
+          color: #222;
+      }
+
+      .reply-button {
+          margin-top: 10px;
+          background-color: #555;
+      }
+
+      .reply-button:hover {
+          background-color: #777;
+      }
+
+      .reply-box {
+          margin-top: 10px;
+          padding: 10px;
+          background-color: #f2f2f2;
+          border-radius: 5px;
+      }
+      </style>
+    <div class="comment-box">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Laisser un commentaire</h2>
+      <input type="text" id="commenter-name" placeholder="Votre nom">
+      <textarea id="comment-input" placeholder="Écrivez votre commentaire ici..."></textarea>
+      <button onclick="addComment()">Ajouter Commentaire</button>
+    </div>
+    <div class="comments-list">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commentaires</h2>
+      <div id="comments-container"></div>
+    </div>
+<script>
+function addComment() {
+var commenterName = document.getElementById("commenter-name").value;
+var commentInput = document.getElementById("comment-input");
+var commentText = commentInput.value;
+
+if (commenterName.trim() !== "" && commentText.trim() !== "") {
+var commentContainer = document.getElementById("comments-container");
+
+// Créer un nouvel élément div pour le commentaire
+var newComment = document.createElement("div");
+newComment.className = "comment";
+
+// Ajouter le nom du commentateur
+var commenter = document.createElement("strong");
+commenter.textContent = commenterName + ": ";
+newComment.appendChild(commenter);
+
+// Ajouter le texte du commentaire
+var commentContent = document.createElement("span");
+commentContent.textContent = commentText;
+newComment.appendChild(commentContent);
+
+// Ajouter un bouton de réponse
+var replyButton = document.createElement("button");
+replyButton.textContent = "Répondre";
+replyButton.className = "reply-button";
+replyButton.onclick = function() {
+  showReplyBox(newComment, commenterName);
+};
+newComment.appendChild(replyButton);
+
+// Ajouter le nouveau commentaire à la liste des commentaires
+commentContainer.appendChild(newComment);
+
+// Vider la zone de texte
+commentInput.value = "";
+} else {
+alert("Veuillez entrer votre nom et écrire un commentaire avant de l'ajouter.");
+}
+}
+
+function showReplyBox(commentElement, commenterName) {
+// Récupérer le nom de la personne qui répond
+var replierName = prompt("Entrez votre nom:");
+
+if (replierName !== null && replierName.trim() !== "") {
+// Créer une boîte de réponse
+var replyBox = document.createElement("div");
+replyBox.className = "reply-box";
+
+// Zone de texte pour la réponse
+var replyInput = document.createElement("textarea");
+replyInput.placeholder = "Écrivez votre réponse ici...";
+replyBox.appendChild(replyInput);
+
+// Bouton pour ajouter la réponse
+var addReplyButton = document.createElement("button");
+addReplyButton.textContent = "Ajouter Réponse";
+addReplyButton.className = "reply-button";
+addReplyButton.onclick = function() {
+  addReply(commentElement, commenterName, replierName, replyInput.value, replyBox);
+};
+replyBox.appendChild(addReplyButton);
+
+// Ajouter la boîte de réponse sous le commentaire
+commentElement.appendChild(replyBox);
+} else {
+alert("Veuillez entrer votre nom avant de répondre.");
+}
+}
+
+function addReply(commentElement, commenterName, replierName, replyText, replyBox) {
+if (replyText.trim() !== "") {
+// Créer un nouvel élément div pour la réponse
+var newReply = document.createElement("div");
+newReply.className = "comment";
+newReply.style.marginLeft = "20px"; // Ajouter une marge pour l'indentation
+
+// Ajouter le nom de la personne qui répond
+var replier = document.createElement("strong");
+replier.textContent = replierName + " répond à " + commenterName + ": ";
+newReply.appendChild(replier);
+
+// Ajouter le texte de la réponse
+var replyContent = document.createElement("span");
+replyContent.textContent = replyText;
+newReply.appendChild(replyContent);
+
+// Ajouter la nouvelle réponse sous le commentaire
+commentElement.appendChild(newReply);
+
+// Supprimer la boîte de réponse
+commentElement.removeChild(replyBox);
+} else {
+alert("Veuillez écrire une réponse avant de l'ajouter.");
+}
+}
+
+</script>
+
+
+
+    <section class="cta" id="contact">
+      <div class="container">
+
+        <div class="cta-content">
+          <p class="section-subtitlee" >Call To Action</p>
+
+          <h2 class="h2.section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+
+          <p><img src="./images/logo.jpg" alt="Sahara Desert" align="right" class="img-about"><strong></strong> The Sahara Desert xcfgv cfvgbh fcvgbh fcgvh b offers unique experiences like camel trekking and desert camping.</p>
+        </li><br><br>
+        </div>
+
+      </div>
+    </section>
+    <footer class="footer">
+
+      <div class="footer-top">
+        <div class="container">
+  
+          <div class="footer-brand">
+  
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" alt="Tourly logo">
+            </a>
+  
+            <p class="footer-text">
+              "Explorez les merveilles du Maroc ! Découvrez des trésors cachés, des richesses culturelles et des astuces d'initiés pour un voyage inoubliable. Votre porte d'entrée vers le monde enchanteur du Maroc vous attend."
+            </p>
+  
+          </div>
+  
+          <div class="footer-contact">
+  
+            <h4 class="contact-title">Contact Us</h4>
+  
+            <p class="contact-text">
+               wanna add your journey in our website?Feel free to contact and reach us !!
+            </p>
+  
+            <ul>
+  
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+  
+                <a href="tel:+01123456790" class="contact-link">+212615633295</a>
+              </li>
+  
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+  
+                <a href="mailto:info.tourly.com" class="contact-link">info-101M.com</a>
+              </li>
+  
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+  
+                <address>3146 Koontz, RABAT</address>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+          <div class="footer-form">
+  
+            <p class="form-text">
+              Subscribe our website for more update & news !!
+            </p>
+  
+            <form action="" class="form-wrapper">
+              <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+  
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="container">
+  
+          <p class="copyright">
+            &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+          </p>
+  
+          <ul class="footer-bottom-list">
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+      </div>
+  
+    </footer>
+
+  </article>
+
+        <!-- Back to Top -->
+
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+ 
+
+    <!-- JavaScript Libraries -->
+
+    <script src=https://code.jquery.com/jquery-3.4.1.min.js></script>
+
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js></script>
+
+   
+
+ 
+
+    <!-- Template Javascript -->
+
+    <script>(function ($) {
+
+        "use strict";
+
+   
+
+        // Spinner
+
+        var spinner = function () {
+
+            setTimeout(function () {
+
+                if ($('#spinner').length > 0) {
+
+                    $('#spinner').removeClass('show');
+
+                }
+
+            }, 1);
+
+        };
+
+        spinner();
+
+       
+
+        
+
+        // Initiate the wowjs
+
+        new WOW().init();
+
+   
+
+    
+
+        // Sticky Navbar
+
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() > 45) {
+
+                $('.navbar').addClass('sticky-top shadow-sm');
+
+            } else {
+
+                $('.navbar').removeClass('sticky-top shadow-sm');
+
+            }
+
+        });
+
+       
+
+        
+
+        // Dropdown on mouse hover
+
+        const $dropdown = $(".dropdown");
+
+        const $dropdownToggle = $(".dropdown-toggle");
+
+        const $dropdownMenu = $(".dropdown-menu");
+
+        const showClass = "show";
+
+       
+
+        $(window).on("load resize", function() {
+
+            if (this.matchMedia("(min-width: 992px)").matches) {
+
+                $dropdown.hover(
+
+                function() {
+
+                    const $this = $(this);
+
+                    $this.addClass(showClass);
+
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+
+                    $this.find($dropdownMenu).addClass(showClass);
+
+                },
+
+                function() {
+
+                    const $this = $(this);
+
+                    $this.removeClass(showClass);
+
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+
+                    $this.find($dropdownMenu).removeClass(showClass);
+
+                }
+
+                );
+
+            } else {
+
+                $dropdown.off("mouseenter mouseleave");
+
+            }
+
+        });
+
+       
+
+        
+
+        // Back to top button
+
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() > 300) {
+
+                $('.back-to-top').fadeIn('slow');
+
+            } else {
+
+                $('.back-to-top').fadeOut('slow');
+
+            }
+
+        });
+
+        $('.back-to-top').click(function () {
+
+            $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+
+            return false;
+
+        });
+
+   
+
+    
+
+        // Facts counter
+
+        $('[data-toggle="counter-up"]').counterUp({
+
+            delay: 10,
+
+            time: 2000
+
+        });
+
+   
+
+    
+
+        // Modal Video
+
+        $(document).ready(function () {
+
+            var $videoSrc;
+
+            $('.btn-play').click(function () {
+
+                $videoSrc = $(this).data("src");
+
+            });
+
+            console.log($videoSrc);
+
+   
+
+            $('#videoModal').on('shown.bs.modal', function (e) {
+
+                $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+
+            })
+
+   
+
+            $('#videoModal').on('hide.bs.modal', function (e) {
+
+                $("#video").attr('src', $videoSrc);
+
+            })
+
+        });
+
+   
+
+    
+
+        // Testimonials carousel
+
+        $(".testimonial-carousel").owlCarousel({
+
+            autoplay: true,
+
+            smartSpeed: 1000,
+
+            center: true,
+
+            margin: 24,
+
+            dots: true,
+
+            loop: true,
+
+            nav : false,
+
+            responsive: {
+
+                0:{
+
+                    items:1
+
+                },
+
+                768:{
+
+                    items:2
+
+                },
+
+                992:{
+
+                    items:3
+
+                }
+
+            }
+
+        });
+
+       
+
+    })(jQuery);
+
+   
+
+    </script>
+
+</body>
+
+ 
+
+</html>

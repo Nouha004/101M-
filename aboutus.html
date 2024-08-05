@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Trip Guide TO MOROCCO</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/logo.jpg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+
+   }
+
+   /* Home Section Start */
+   .home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(https://www.luxurylifestylemag.co.uk/wp-content/uploads/2020/03/OO_ThePalm_Wellness_Spa_Entrance_Courtyard_0982_MASTER.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "DOUAE";}
+    10%{content: "MANAL";}
+    20%{content: "NOUHAILA";}
+    30%{content: "DOUAE";}
+    40%{content: "MANAL";}
+    50%{content: "NOUHAILA";}
+    60%{content: "DOUAE";}
+    70%{content: "MANAL";}
+    80%{content: "NOUHAILA";}
+    90%{content: "DOUAE";}
+    100%{content: "MANAL";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+    </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+        <a href="#" class="logo">
+          <img src="./images/logo.jpg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+          <nav class="navbar" data-navbar>
+             <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./images/logo.jpg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+       </div>
+
+       <ul class="navbar-list">
+        <li><a href="index.html">Home</a></li> &nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="aboutus.html" onclick="toggleAbout()">About us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="activities.html">Activités</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="cuisine.html">Cuisine</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="accomendation.html">Hébergement</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="transporation.html">Transporation</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="faqs.html">FAQs</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="contactus.html">Contactez-nous</a></li>
+        <li><a href="login.html">Login</a></li>
+     </ul>
+
+        </nav>
+
+
+      </div>
+    </div>
+    <style>
+        
+    
+        .containere {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          
+        }
+    
+        h1 {
+          color: #004080;
+          margin-bottom: 20px;
+        }
+    
+        p {
+          margin-bottom: 15px;
+        }
+        .img-about {
+          width: 70px;
+          height: 70px;
+          margin-right: 20px;
+          border-radius: 50%;
+          object-fit: cover;
+          float: right;
+      }
+        .about-info {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .team-members {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 20px;
+        }
+    
+        .team-member {
+          max-width: 300px;
+          margin: 10px;
+          padding: 15px;
+          background-color: #bafdca;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(160, 232, 213, 0.1);
+          text-align: center;
+        }
+    
+        .team-member img {
+          max-width: 100px;
+          height: auto;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+        body{
+  background-color: #c4dbf5;
+}
+      </style>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+          <!-- Home Section Start -->
+    <div class="home">
+      <div class="content">
+          <h5>Welcome To 101M Creaters</h5>
+          <h1>Get to know <span class="changecontent"></span></h1>
+          <p>...</p>
+      </div>
+  </div>
+  <!-- Home Section End -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <div class="containere">
+          <h1>Meet our team:</h1>
+          <div class="team-members">
+            <div class="team-member">
+              &nbsp; &nbsp;<img src="./images/m.webp" alt="Team Member 1"> <br>
+              <h3>Maati Manal</h3>
+              <p>1A a l'ESI filiere ISITD</p>
+            </div>
+            <div class="team-member">
+              &nbsp; &nbsp;<img src="./images/m.webp" alt="Team Member 2"><br>
+              <h3>Errousso Douae</h3>
+              <p>1A a l'ESI filiere ISITD</p>
+            </div>
+            <div class="team-member">
+              &nbsp; &nbsp;<img src="./images/m.webp" alt="Team Member 3"><br>
+              <h3>Lachgar Nouhaila</h3>
+              <p>1A a l'ESI filiere IIN</p>
+            </div>
+          </div>
+          <div class="about-info">
+            <p> <strong>              Bienvenue dans notre base de connaissances dédiée aux nouveaux voyageurs et à ceux qui prévoient de visiter le Maroc.</strong><br>
+              <strong>Nous sommes</strong> une équipe de passionnés qui se sont réunis pour créer une ressource complète pour tous ceux qui souhaitent explorer les merveilles du Maroc. <br>
+              Le Maroc est un pays riche en culture, en histoire et en beauté naturelle. <strong>Le Maroc offre une gamme diversifiée d'expériences qui répondent aux intérêts de chaque voyageur.</strong> <br>
+              <strong>Dans notre base de connaissances</strong>, vous trouverez des informations détaillées sur divers aspects de la culture marocaine, des traditions et du mode de vie. Nous couvrons tout, de la scène culinaire dynamique, avec ses épices aromatiques et ses délicieux tagines, aux arts traditionnels et à l'artisanat qui mettent en valeur le patrimoine artistique du pays.
+              <br> Naviguer à travers les villes et les régions du Maroc peut être une aventure en soi. <br>
+              <strong>Nous fournissons</strong> des informations sur les options de transport, y compris des conseils sur l'utilisation des transports en commun, la location de voitures et l'organisation de visites guidées pour rendre votre expérience de voyage fluide et agréable. Trouver le bon hébergement est crucial pour un séjour confortable. Nos guides comprennent des recommandations pour les hôtels, les riads, les maisons d'hôtes et des hébergements uniques qui offrent un mélange de confort moderne et de charme marocain.
+              <br>Notre équipe s'engage à fournir des informations précises et à jour, en veillant à ce que vous disposiez de toutes les ressources nécessaires pour planifier et profiter de votre voyage au Maroc. Nous vous invitons à explorer notre base de connaissances, à poser des questions et à découvrir la beauté et la diversité que le Maroc a à offrir.
+              <br> <strong>Merci de nous avoir choisis comme votre guide de confiance pour le Maroc!</strong>
+            </p>
+
+          </div>
+        </div>
+        <div class="comment-box">
+          <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Laisser un commentaire</h2>
+          <input type="text" id="commenter-name" placeholder="Votre nom">
+          <textarea id="comment-input" placeholder="Écrivez votre commentaire ici..."></textarea>
+          <button onclick="addComment()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ajouter Commentaire</button>
+        </div>
+        <div class="comments-list">
+          <h2>Commentaires</h2>
+          <div id="comments-container"></div>
+        </div>
+  <style>
+    input[type="text"],
+         textarea {
+             width: 100%;
+             padding: 8px;
+             margin: 5px 0;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+             box-sizing: border-box;
+         }
+ 
+         textarea {
+             height: 80px;
+             resize: vertical;
+         }
+ 
+         button {
+             display: block;
+             width: 100%;
+             padding: 10px;
+             background-color: #333;
+             color: #fff;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             font-size: 14px;
+             transition: background-color 0.3s ease;
+         }
+         button:hover {
+             background-color: #555;
+         }
+ 
+         .comment {
+             margin-top: 20px;
+             padding: 10px;
+             background-color: #ddd;
+             border-radius: 5px;
+         }
+ 
+         .comment strong {
+             font-weight: bold;
+             color: #222;
+         }
+ 
+         .reply-button {
+             margin-top: 10px;
+             background-color: #555;
+         }
+         .reply-button:hover {
+             background-color: #777;
+         }
+ 
+         .reply-box {
+             margin-top: 10px;
+             padding: 10px;
+             background-color: #f2f2f2;
+             border-radius: 5px;}
+             </style>
+<script>
+  function addComment() {
+var commenterName = document.getElementById("commenter-name").value;
+var commentInput = document.getElementById("comment-input");
+var commentText = commentInput.value;
+
+if (commenterName.trim() !== "" && commentText.trim() !== "") {
+  var commentContainer = document.getElementById("comments-container");
+
+  // Créer un nouvel élément div pour le commentaire
+  var newComment = document.createElement("div");
+  newComment.className = "comment";
+
+  // Ajouter le nom du commentateur
+  var commenter = document.createElement("strong");
+  commenter.textContent = commenterName + ": ";
+  newComment.appendChild(commenter);
+
+  // Ajouter le texte du commentaire
+  var commentContent = document.createElement("span");
+  commentContent.textContent = commentText;
+  newComment.appendChild(commentContent);
+
+  // Ajouter un bouton de réponse
+  var replyButton = document.createElement("button");
+  replyButton.textContent = "Répondre";
+  replyButton.className = "reply-button";
+  replyButton.onclick = function() {
+      showReplyBox(newComment, commenterName);
+  };
+  newComment.appendChild(replyButton);
+
+  // Ajouter le nouveau commentaire à la liste des commentaires
+  commentContainer.appendChild(newComment);
+
+  // Vider la zone de texte
+  commentInput.value = "";
+} else {
+  alert("Veuillez entrer votre nom et écrire un commentaire avant de l'ajouter.");
+}
+}
+
+function showReplyBox(commentElement, commenterName) {
+// Récupérer le nom de la personne qui répond
+var replierName = prompt("Entrez votre nom:");
+
+if (replierName !== null && replierName.trim() !== "") {
+  // Créer une boîte de réponse
+  var replyBox = document.createElement("div");
+  replyBox.className = "reply-box";
+
+  // Zone de texte pour la réponse
+  var replyInput = document.createElement("textarea");
+  replyInput.placeholder = "Écrivez votre réponse ici...";
+  replyBox.appendChild(replyInput);
+
+  // Bouton pour ajouter la réponse
+  var addReplyButton = document.createElement("button");
+  addReplyButton.textContent = "Ajouter Réponse";
+  addReplyButton.className = "reply-button";
+  addReplyButton.onclick = function() {
+      addReply(commentElement, commenterName, replierName, replyInput.value, replyBox);
+  };
+  replyBox.appendChild(addReplyButton);
+
+  // Ajouter la boîte de réponse sous le commentaire
+  commentElement.appendChild(replyBox);
+} else {
+  alert("Veuillez entrer votre nom avant de répondre.");
+}
+}
+
+function addReply(commentElement, commenterName, replierName, replyText, replyBox) {
+if (replyText.trim() !== "") {
+  // Créer un nouvel élément div pour la réponse
+  var newReply = document.createElement("div");
+  newReply.className = "comment";
+  newReply.style.marginLeft = "20px"; // Ajouter une marge pour l'indentation
+
+  // Ajouter le nom de la personne qui répond
+  var replier = document.createElement("strong");
+  replier.textContent = replierName + " répond à " + commenterName + ": ";
+  newReply.appendChild(replier);
+
+  // Ajouter le texte de la réponse
+  var replyContent = document.createElement("span");
+  replyContent.textContent = replyText;
+  newReply.appendChild(replyContent);
+
+  // Ajouter la nouvelle réponse sous le commentaire
+  commentElement.appendChild(newReply);
+
+  // Supprimer la boîte de réponse
+  commentElement.removeChild(replyBox);
+} else {
+  alert("Veuillez écrire une réponse avant de l'ajouter.");
+}
+}
+
+</script>
+        <section class="cta" id="contact">
+          <div class="container">
+  
+            <div class="cta-content">
+              <p class="section-subtitlee" >Appel à l'action</p>
+  
+              <h2 class="h2 section-title">Prêt pour un voyage inoubliable. Souvenez-vous de nous !</h2>
+  
+              <p><img src="./images/logo.jpg" alt="Sahara Desert" align="right" class="img-about"><strong>Découvrez mieux le Maroc pour vivre une expérience mémorable et avoir une idée générale du pays.</strong></p>
+            </li><br><br>
+            </div>
+  
+          </div>
+        </section>
+        </article>
+        <footer class="footer">
+
+          <div class="footer-top">
+            <div class="container">
+      
+              <div class="footer-brand">
+      
+                <a href="#" class="logo">
+                  <img src="./assets/images/logo.svg" alt="Tourly logo">
+                </a>
+      
+                <p class="footer-text">
+                  Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
+                  at
+                  perferendis, pretium, aenean aut ultrices.
+                </p>
+      
+              </div>
+      
+              <div class="footer-contact">
+      
+                <h4 class="contact-title">Contact Us</h4>
+      
+                <p class="contact-text">
+                   wanna add your journey in our website?Feel free to contact and reach us !!
+                </p>
+      
+                <ul>
+      
+                  <li class="contact-item">
+                    <ion-icon name="call-outline"></ion-icon>
+      
+                    <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+                  </li>
+      
+                  <li class="contact-item">
+                    <ion-icon name="mail-outline"></ion-icon>
+      
+                    <a href="mailto:info.tourly.com" class="contact-link">info-101M.com</a>
+                  </li>
+      
+                  <li class="contact-item">
+                    <ion-icon name="location-outline"></ion-icon>
+      
+                    <address>3146 Koontz, RABAT</address>
+                  </li>
+      
+                </ul>
+      
+              </div>
+      
+              <div class="footer-form">
+      
+                <p class="form-text">
+                  Subscribe our newsletter for more update & news !!
+                </p>
+      
+                <form action="" class="form-wrapper">
+                  <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+      
+                  <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+      
+              </div>
+      
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <div class="container">
+      
+              <p class="copyright">
+                &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+              </p>
+      
+              <ul class="footer-bottom-list">
+      
+                <li>
+                  <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-bottom-link">Term & Condition</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-bottom-link">FAQ</a>
+                </li>
+      
+              </ul>
+      
+            </div>
+          </div>
+      
+        </footer>      
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
