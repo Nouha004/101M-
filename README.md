@@ -4,25 +4,25 @@
 <b>Home Page</b>
 ![image](https://github.com/user-attachments/assets/58560f38-6523-456c-ba9f-94c9d5fe93e8)
 
-Best Places
+<b>Best Places</b>
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/cards.png)
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/photos.png)
 
                 
-Food
+<b>Food</b>
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/food.png)
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/food2.png)
 
 
-Hosting
+<b>Hosting</b>
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/heberg.png)
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/heberge.png)
 
-Transporting
+<b>Transporting</b>
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/transp.png)
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/transpo.png)
 
-FAQs
+<b>FAQs</b>
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/faq.png)
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/faq\).png)
 
