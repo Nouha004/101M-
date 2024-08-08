@@ -4,7 +4,7 @@
 <h1>Home Page</h1>
 ![image](https://github.com/user-attachments/assets/58560f38-6523-456c-ba9f-94c9d5fe93e8)
 
-<h1>Best Places</h1
+<h1>Best Places</h1>
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/cards.png)
                 
 <h1>Food</h1>
