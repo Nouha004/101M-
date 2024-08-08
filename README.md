@@ -6,6 +6,8 @@ Home Page
 
 Best Places
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/cards.png)
+![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/photos.png)
+
                 
 Food
 ![image](https://github.com/Nouha004/101M-KnowledgeBase/blob/master/food.png)
